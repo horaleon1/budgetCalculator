@@ -9,7 +9,7 @@ const ExpenseForm = ({
   handleSubmit
 }) => {
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
         <div>
           <label htmlFor="charge">Charge</label>
@@ -35,7 +35,7 @@ const ExpenseForm = ({
         </div>
       </div>
       <button type="submit" onSubmit={handleSubmit}>
-        Submit <MdSend />{" "}
+        Submit <MdSend />
       </button>
     </form>
   );
