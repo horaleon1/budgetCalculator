@@ -31,7 +31,7 @@ export default class extends Component {
           ))}
         </ul>
         <Title title={"adios"} />
-        <Title title={"thrid"} />
+        <Title title={"thrid-B"} />
       </div>
     );
   }
