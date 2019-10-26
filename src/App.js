@@ -3,6 +3,9 @@ import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import Alert from "./components/Alert";
 import uuid from "uuid/v4";
+import Form from './components/Form';
+import Form2 from './components/Forms2';
+import Extra from './components/Extra';
 
 const initialExpenses = [
   { id: uuid(), charge: "rent", amount: 1600 },
@@ -40,28 +43,34 @@ const App = () => {
   };
 
   return (
+    // <div>
+    //   <Alert />
+    //   <h1> Budget Calculator </h1>
+    //   <div>
+    //     <ExpenseForm
+    //       charge={charge}
+    //       amount={amount}
+    //       handleCharge={handleCharge}
+    //       handleAmount={handleAmount}
+    //       handleSubmit={handleSubmit}
+    //     />
+    //     <ExpenseList expenses={expenses} />
+    //   </div>
+    //   <h1>
+    //     Total Spending:
+    //     <span>
+    //       $
+    //       {expenses.reduce((acc, curr) => {
+    //         return acc + curr.amount;
+    //       }, 0)}
+    //     </span>
+    //   </h1>
+    // </div>
     <div>
-      <Alert />
-      <h1> Budget Calculator </h1>
-      <div>
-        <ExpenseForm
-          charge={charge}
-          amount={amount}
-          handleCharge={handleCharge}
-          handleAmount={handleAmount}
-          handleSubmit={handleSubmit}
-        />
-        <ExpenseList expenses={expenses} />
-      </div>
-      <h1>
-        Total Spending:
-        <span>
-          $
-          {expenses.reduce((acc, curr) => {
-            return acc + curr.amount;
-          }, 0)}
-        </span>
-      </h1>
+      <Form />
+
+      <Extra />
+     
     </div>
   );
 };

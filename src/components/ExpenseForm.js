@@ -34,7 +34,7 @@ const ExpenseForm = ({
           />
         </div>
       </div>
-      <button type="submit" onSubmit={handleSubmit}>
+      <button type="submit">
         Submit <MdSend />
       </button>
     </form>
